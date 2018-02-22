@@ -24,13 +24,13 @@ require_relative 'lib/page/person'
 require_relative 'lib/page/post'
 require_relative 'lib/page/posts'
 
-set :contact_email, 'syeinfo@eienigeria.org'
+set :contact_email, 'gr@gavinrozzi.com'
 set :content_dir, File.join(__dir__, 'prose')
 set :datasource, ENV.fetch('DATASOURCE', 'https://github.com/everypolitician/everypolitician-data/raw/master/countries.json')
 set :index, EveryPolitician::Index.new(index_url: settings.datasource)
-set :mapit_url, 'http://nigeria.mapit.mysociety.org'
+set :mapit_url, 'http://192.168.29.155'
 set :mapit_user_agent, ENV.fetch('MAPIT_USER_AGENT', nil)
-set :twitter_user, 'NGShineYourEye'
+set :twitter_user, 'trentonwatch'
 
 # Create a wrapper for the mappings between the various IDs we have
 # to use for areas / places.
